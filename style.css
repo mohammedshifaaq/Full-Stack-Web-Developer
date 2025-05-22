@@ -239,12 +239,83 @@
 }
 
 /* Responsive behavior */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .info-row {
     flex-direction: column;
   }
 
   .info-row p {
     flex: 1 1 100%;
+  }
+}
+
+
+
+/* Base font and spacing adjustments for smaller screens */
+@media (max-width: 1024px) {
+  section {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .info-row p {
+    flex: 1 1 100%;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 1rem;
+  }
+
+  form {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-section,
+  .form-container,
+  #about,
+  #contact {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  button {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .info-row strong {
+    width: 100%;
   }
 }
